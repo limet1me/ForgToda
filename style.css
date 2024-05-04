@@ -1,0 +1,292 @@
+body {
+    font-family:'BellotaText-Bold';
+    background-image: url("img/pattern.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.35);
+            color: white;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+		border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+div{
+text-align:center;
+}
+
+h1 {
+   text-align: center;
+}
+
+href{
+	font-family:'BellotaText-Bold';
+	text-decoration: none;
+}
+
+a {
+   font-family:'BellotaText-Bold';
+   text-align: center;
+   text-decoration: none;
+      display:   inline-block;
+        margin:    20px 10px;
+}
+
+.container {
+	width: 325px;
+	height: auto;
+	padding: 7px;
+	margin: 0 auto;
+	background: #A0BF5A;
+	text-align: center;
+}
+
+
+.containerinfo {
+	width: 870px;
+	height: auto;
+	padding: 7px;
+	margin: 0 auto;
+	background: #FFF;
+	text-align: center;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.container1 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.logo {
+    font-family: 'Kanit-Regular';
+    font-size: 2em;;
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Kanit-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("font/Kanit-Regular.woff2") format("woff2"),
+   url("font/Kanit-Regular.woff") format("woff"),
+   url("font/Kanit-Regular.ttf") format("truetype");
+}
+
+  @font-face {
+    font-family: 'BellotaText-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(font//BellotaText-Bold.ttf) format('truetype'),
+           url(font//BellotaText-Bold.woff) format('woff'),
+           url(font//BellotaText-Bold.woff2) format('woff2');
+    }
+
+* {
+   box-sizing: border-box;
+}
+.border {
+   width: 300px;
+   margin: 5px;
+   background: #FFF;
+   padding: 20px;
+   border: 1px solid #FFF1A6;
+   border-radius: 5px;
+}
+.wrap {
+   height: 100%;
+   position: relative;
+}
+.product-wrap {
+   position: relative;
+}
+.product-wrap:after {
+   content: '';
+   background: rgba(70, 120, 37, .5);
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   opacity: 0;
+   transform: scale(.3);
+   transition: .3s ease-in-out;
+}
+.border:hover .product-wrap:after {
+   opacity: 1;
+   transform: scale(1);
+}
+.product-wrap a {
+   display: block;
+   text-decoration: none;
+}
+.product-wrap img {
+   display: block;
+   width: 100%;
+}
+.loop-action {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   opacity: 0;
+   transform: translate(-50%, -50%);
+   transition: .3s ease-in-out;
+}
+.border:hover .loop-action {
+   opacity: 1;
+}
+.loop-action a {
+   text-decoration: none;
+   display: block;
+   border: 1px solid white;
+   white-space: nowrap;
+   text-transform: uppercase;
+   padding: .5em 1em;
+   font-size: 14px;
+   line-height: 1.6;
+   outline: none;
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+   color: white;
+   min-width: 160px;
+   margin: 5px auto;
+   transition: .3s ease-in-out;
+}
+.loop-action a:after {
+   content: '';
+   position: absolute;
+   left: -220%;
+   top: -500%;
+   width: 140%;
+   height: 1000%;
+   transform: rotate(45deg);
+   background: white;
+   z-index: -1;
+   transition: .3s ease-in-out;
+}
+.loop-action a:hover {
+   color: black;
+}
+.loop-action a:hover:after {
+   left: 0%;
+}
+.border:hover {
+   border-color: #467825;
+}
+.product-info {
+   padding-top: 15px;
+}
+.product-title {
+   font-weight: normal;
+   font-family: 'BellotaText-Bold';
+   color: #A0BF5A;
+   font-size: 18px;
+   text-align: center;
+}
+.price {
+   font-family: 'BellotaText-Bold';
+   color: #A0BF5A;
+   font-style: normal;
+   font-weight: bold;
+   text-align: center;
+}
+
+.product-wrapper {
+  display: block;
+  width: 100%;
+  float: left;
+  transition: width .2s;
+}
+ 
+@media only screen and (min-width: 450px) {
+  .product-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product-wrapper {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .product-wrapper {
+    width: 25%;
+  }
+}
+
+
+
+header {
+	    font-family: 'BellotaText-Bold';
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 10px 28%;
+        }
+        .logo {
+            font-size: 54px;
+            font-weight: bold;
+        }
+        .nav-buttons {
+            display: flex;
+	column-gap: 1px;
+            flex-direction: column;
+	text-align: center;
+        }
+        .nav-button {
+            background-color: #EAEAEA;
+            padding:10px 15px 10px 35px;
+            border-radius: 50px;
+            margin-top: 5px;
+            display: flex;
+	text-align: center;
+            align-items: center;
+	height:50px;
+	width:auto;
+        }
+        .nav-button:last-child {
+            margin-right: 0;
+        }
+
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #A0BF5A;
+            color: white;
+            padding: 7px 7% 7px 7%;
+	margin: 20px 20% 0 20%;
+        }
+        .social-icons {
+            display: flex;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .contact-info {
+            display: flex;
+	column-gap: 1px;
+            flex-direction: column;
+        }
